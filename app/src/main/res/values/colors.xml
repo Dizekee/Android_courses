@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_color">#F2F2F3</color>
+    <color name="Bg_activity">#000000</color>
+    <color name="green_200">#12B956</color>
+    <color name="windowBack">#32333A</color>
+    <color name="text_hint">#9e9ba0</color>
+    <color name="vk_color">#2683ED</color>
+    <color name="start_ok_color">#F95D00</color>
+    <color name="end_ok_color">#F98509</color>
+</resources>
