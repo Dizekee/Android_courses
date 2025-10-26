@@ -21,6 +21,7 @@ class RegisterActivity : AppCompatActivity() {
             insets
         }
         val entrance = findViewById<TextView>(R.id.entrance)
+        val registration = findViewById<Button>(R.id.registration)
 
         entrance.setOnClickListener {
             val intent = Intent(this, EntranceActivity::class.java)
@@ -33,6 +34,15 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(intent, options.toBundle())
         }
 
+        registration.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
 
+            val options = ActivityOptions.makeCustomAnimation(
+                this,
+                android.R.anim.fade_in,
+                android.R.anim.fade_out
+            )
+            startActivity(intent, options.toBundle())
+        }
     }
 }

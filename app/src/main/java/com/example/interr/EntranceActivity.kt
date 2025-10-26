@@ -3,6 +3,7 @@ package com.example.interr
 import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,10 +21,21 @@ class EntranceActivity : AppCompatActivity() {
             insets
         }
         val registration = findViewById<TextView>(R.id.registration)
+        val entrance = findViewById<Button>(R.id.entrance)
 
         registration.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
 
+            val options = ActivityOptions.makeCustomAnimation(
+                this,
+                android.R.anim.fade_in,
+                android.R.anim.fade_out
+            )
+            startActivity(intent, options.toBundle())
+        }
+
+        entrance.setOnClickListener {
+            val intent = Intent(this, MainActivity2::class.java)
             val options = ActivityOptions.makeCustomAnimation(
                 this,
                 android.R.anim.fade_in,

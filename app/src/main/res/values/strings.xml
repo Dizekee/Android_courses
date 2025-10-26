@@ -23,5 +23,9 @@
     <string name="image_view_item_transform_content_description">Represents an image view in the
         item
     </string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Избранное</string>
+    <string name="title_notifications">Аккаунт</string>
 
 </resources>

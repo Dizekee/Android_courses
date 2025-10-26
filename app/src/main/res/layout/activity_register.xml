@@ -9,7 +9,7 @@
     tools:context=".RegisterActivity">
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/vk_button"
         android:layout_width="180dp"
         android:layout_height="42dp"
         android:layout_marginStart="16dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/ok_button"
         android:layout_width="180dp"
         android:layout_height="43dp"
         android:layout_marginTop="25dp"
@@ -28,7 +28,8 @@
         android:background="@drawable/background_ok"
         android:src="@drawable/icon_ok"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/text_registr"
@@ -46,15 +47,15 @@
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/search_background"
         android:ems="10"
         android:hint="example@gmail.com"
-        android:textColorHint="@color/text_hint"
         android:inputType="textEmailAddress"
+        android:textColorHint="@color/text_hint"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +64,7 @@
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
@@ -71,8 +72,8 @@
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:hint="Введите пароль ещё раз"
-        android:textColorHint="@color/text_hint"
         android:inputType="textPassword"
+        android:textColorHint="@color/text_hint"
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +106,7 @@
     <Button
         android:id="@+id/registration"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
@@ -119,19 +120,20 @@
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/search_background"
         android:ems="10"
         android:hint="Введите пароль"
-        android:textColorHint="@color/text_hint"
         android:inputType="textPassword"
+        android:textColorHint="@color/text_hint"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView2"
@@ -171,28 +173,6 @@
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-    <ImageButton
-        android:id="@+id/vk_button"
-        android:layout_width="180dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/background_vk"
-        android:src="@drawable/icon_vk"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <ImageButton
-        android:id="@+id/ok_button"
-        android:layout_width="180dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/background_ok"
-        android:src="@drawable/icon_ok"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
