@@ -42,27 +42,21 @@ class CourseAdapter(
         holder.text.text = course.text
         holder.start.text = formatDate(course.startDate)
 
-        // Установка начальной иконки закладки
         updateBookmarkIcon(holder.likeButton, course.hasLike)
 
-        // Обработчик клика по закладке
         holder.likeButton.setOnClickListener {
-            // Переключаем состояние
+
             course.hasLike = !course.hasLike
 
-            // Обновляем иконку
             updateBookmarkIcon(holder.likeButton, course.hasLike)
 
-            // Уведомляем внешнего слушателя
             onFavoriteClick?.invoke(course, position)
         }
 
-        // Обработчик клика по тексту "Подробнее"
         holder.detailsText.setOnClickListener {
-            // Сначала уведомляем внешнего слушателя, если он есть
+
             onDetailsClick?.invoke(course, position)
 
-            // Затем запускаем активность
             val context = holder.itemView.context
             val intent = Intent(context, CourseActivity::class.java).apply {
                 putExtra("COURSE_TITLE", course.title)
@@ -86,9 +80,9 @@ class CourseAdapter(
 
     private fun updateBookmarkIcon(button: ImageButton, isLiked: Boolean) {
         val bookmarkIcon = if (isLiked) {
-            R.drawable.bookmarkk // полная
+            R.drawable.bookmarkk
         } else {
-            R.drawable.bookmark_2 // пустая
+            R.drawable.bookmark_2
         }
         button.setImageResource(bookmarkIcon)
     }
